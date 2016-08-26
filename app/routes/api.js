@@ -102,7 +102,7 @@ module.exports = function(app,express,io){
 					var token = createToken(user);
 
 					res.json({
-						sucess:true,
+						success:true,
 						message:"Successfully Loggedin",
 						token:token
 					});

@@ -6,6 +6,7 @@ angular.module('storyCtrl',['storyService'])
 		Story.all()
 			.success(function(data){
 				vm.stories = data;
+				
 			});
 
 		vm.createStory = function() {

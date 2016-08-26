@@ -15,7 +15,7 @@ angular.module('appRoutes',['ngRoute'])
 			templateUrl:'/app/views/pages/signup.html'
 		})
 		.when('/allStories',{
-			templateUrl:'app/views/pages/allStories.html',
+			templateUrl:'/app/views/pages/allStories.html',
 			controller:'AllStoriesController',
 			controllerAs:'story',
 			resolve:{
