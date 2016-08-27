@@ -7,10 +7,10 @@ angular.module('mainCtrl',[])
 	vm.loggedIn = Auth.isLoggedIn();
 
 	$rootScope.$on("$routeChangeStart",function(event,next,current){
-		// if(next.templateUrl == 'app/views/pages/login.html' && vm.loggedIn){
-		// 	event.preventDefault();
-		// 	$location.path('/');
-		// }
+		if(next.templateUrl == 'app/views/pages/login.html' && vm.loggedIn){
+			event.preventDefault();
+			$location.path('/');
+		}
 
 		vm.loggedIn = Auth.isLoggedIn();
 
